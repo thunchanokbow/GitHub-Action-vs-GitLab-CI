@@ -43,7 +43,9 @@ def read_covid_time_series():
 
 # %%
 if __name__ == "__main__":
+    print('start retrieving data ....')
     df=read_covid_time_series()
+    print('saving data to csv and excel')
     df.to_csv('covid19_time_series.csv', index=False)
     df.to_excel('covid19_time_series.xlsx', index=False)
     # dts=pd.read_csv('covid19_time_series.csv')
