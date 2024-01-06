@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:  
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: List all ORIGINAL files
+        run: ls
+
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: Install pandas
+        run: python -m pip install pandas
+
+      - name: Install openpyxl
+        run: python -m pip install openpyxl  
+
+      - name: Run Python Script
+        run: python get_time_series.py
+
+      - name: List all NEW files
+        run: ls
