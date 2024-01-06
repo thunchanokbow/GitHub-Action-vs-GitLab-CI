@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -24,7 +24,7 @@ jobs:
           python-version: '3.8'
 
       - name: Run Python Script
-        run: get_time_series.py
+        run: python get_time_series.py
 
       - name: List all NEW files
         run: ls
