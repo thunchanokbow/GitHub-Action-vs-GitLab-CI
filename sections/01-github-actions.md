@@ -5,11 +5,16 @@
 
 You only need a GitHub repository to create and run a GitHub Actions workflow. This guide will show you how to create a workflow that runs some basic tasks.
 
+![0](/images/03.png)  
+
 ### Check that this step has been completed before STAR
 - Create a repository on GitHub.
 - Upload python script.
 
+![0](/images/04.png)
+
 ## Create YAML contents
+
 To create a yaml file, follow these steps:
 1. Create a `.github/workflows` directory in your GitHub repository if it does not already exist.
 2. In the `.github/workflows` directory, create a file named `ci.yml`.
@@ -64,8 +69,24 @@ jobs:
    [  ] List all files before the job's actions.<br>
    [  ] Set up Python environment.<br>
    [  ] Install required Python libraries.<br>
-   [  ] Run the Python script.<br>
+   [  ] Run the Python script `'get_time_series.py'`.<br>
    [  ] List all files after the job's actions. <br><br>
 For more information about Workflow syntax.[Here](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 
 4. Click `'Commit changes..'`
+
+![0](/images/08.png)
+
+## Viewing workflows results
+
+To view a workflow result, follow these steps:
+1. Go to the repository's main page on `GitHub.com`.
+2. Under your repository name, click `Actions`.
+![0](/images/05.png)
+3. In the left sidebar, click the workflow you want to display, `'CI'`.
+4. In the left sidebar of the workflow run page, under Jobs, click `'build'` job.
+![0](/images/06.png)
+5. The log shows you how each of the steps was processed. Expand any of the steps to view its details.<br><br>
+For example, you can see the list of files in your repository after job run:
+![0](/images/07.png)
+For more information about GitHub Actions.[Here](https://docs.github.com/en/actions)

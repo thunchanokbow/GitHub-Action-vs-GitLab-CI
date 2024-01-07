@@ -1,7 +1,7 @@
 # GitHub Action vs GitLab CI
 ![0](/images/01.png)
 
-**GitHub Actions** is a tool that helps us automate tasks on GitHub. These tasks are called workflows. We can specify when to run a workflow, such as when someone **pushes new code or opens a pull request**.<br>
+**GitHub Actions** is a tool that helps us automate tasks on GitHub. These tasks are called **workflows**. We can specify when to run a workflow, such as when someone **pushes new code or opens a pull request**.<br>
 
 ![0](/images/02.png)
 
