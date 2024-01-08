@@ -18,5 +18,5 @@ Being a data engineer is creating different automations and in particular one ar
 - [Create YAML contents](sections/01-github-actions.md#Create-YAML-contents)<br>
 - [Viewing workflows results](sections/01-github-actions.md#Viewing-workflows-results)<br>
 
-[GitLab CI](sections/02-Create-A-Workspace.md#create-a-workspace).<br>
+[GitLab CI](sections/02-gitlab-ci.md#).<br>
 
