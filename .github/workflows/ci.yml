@@ -1,36 +1,56 @@
+# -----------------------------------
+# Name of the workflow
+# -----------------------------------
 name: CI
 
+# -----------------------------------
+# Events that trigger the workflow
+# -----------------------------------
 on:
+  # When a push is made to the 'master' branch
   push:
     branches: [ master ]
+  # When a pull request is opened against the 'master' branch
   pull_request:
     branches: [ master ]
-
+  # When the workflow is manually triggered
   workflow_dispatch:  
 
+# -----------------------------------
+# Jobs to be executed
+# -----------------------------------
 jobs:
+  # Job named 'build'
   build:
+    # Runs on the latest macOS runner
     runs-on: macos-latest
 
+    # Steps to be executed within the job
     steps:
+      # Checkout the repository's code
       - uses: actions/checkout@v2
 
+      # List all files before the job's actions
       - name: List all ORIGINAL files
         run: ls
 
+      # Set up Python environment
       - name: Install Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.8'
 
+      # Install required Python libraries
       - name: Install pandas
         run: python -m pip install pandas
 
       - name: Install openpyxl
         run: python -m pip install openpyxl  
 
+      # Run the Python script
       - name: Run Python Script
         run: python get_time_series.py
 
+      # List all files after the job's actions
       - name: List all NEW files
         run: ls
