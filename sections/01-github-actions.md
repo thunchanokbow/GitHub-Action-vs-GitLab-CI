@@ -16,8 +16,8 @@ You only need a GitHub repository to create and run a GitHub Actions workflow. T
 ## Create YAML contents
 
 To create a yaml file, follow these steps:
-1. Create a `.github/workflows` directory in your GitHub repository if it does not already exist.
-2. In the `.github/workflows` directory, create a file named `ci.yml`.
+1. Create a `.github/workflows` directory in your GitHub repository **if it does not already exist**.
+2. In the `.github/workflows` directory, **create a file named** `ci.yml`.
 3. Copy the following YAML contents into `ci.yml` file:
 ```
 name: CI
@@ -58,19 +58,19 @@ jobs:
         run: ls
 ```
 #### Events that trigger the workflow
-- When a push is made to the `'master'` branch.
-- When a pull request is opened against the `'master'` branch.
+- When a **push** is made to the `'master'` branch.
+- When a **pull** request is opened against the `'master'` branch.
 - When the workflow is manually triggered.
 #### Jobs to be executed
 - Job named `'build'`.
 - Runs on the latest macOS runner.
 - Steps to be executed within the job.<br>
-   [  ] Checkout the repository's code.<br>
-   [  ] List all files before the job's actions.<br>
-   [  ] Set up Python environment.<br>
-   [  ] Install required Python libraries.<br>
-   [  ] Run the Python script `'get_time_series.py'`.<br>
-   [  ] List all files after the job's actions. <br><br>
+   **[  ] Checkout the repository's code.**<br>
+   **[  ] List all files before the job's actions.**<br>
+   **[  ] Set up Python environment.**<br>
+   **[  ] Install required Python libraries.**<br>
+   **[  ] Run the Python script** `'get_time_series.py'`.<br>
+   **[  ] List all files after the job's actions.** <br><br>
 For more information about Workflow syntax.[Here](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 
 4. Click `'Commit changes..'`
