@@ -147,5 +147,50 @@ copy bucket name from S3 to fill in `Value`<br>
 After you create a variable, you can use it in the pipeline configuration or in job scripts.<br>
 For more information about define a CI/CD varisble.[Here](https://docs.gitlab.com/ee/ci/variables/)
 
-## Create a YAML file (Coming Soon)
+![0](/images/23.png)
+
+## Create a YAML file 
+
+![0](/images/24.png)
+
+To create a yaml file, follow these steps:
+1. Creates a `.gitlab-ci.yml` file in the current working directory.
+2. Copy the following YAML contents into `.gitlab-ci.yml`, GitLab Repository [Here](https://gitlab.com/thunchanokbow/aws-s3-with-gitlab-ci)
+```
+upload to s3:
+  image:
+    name: banst/awscli
+    entrypoint: [""]
+  script:
+    - aws configure set region ap-southeast-1
+    - touch covid19_time_series.csv
+    - aws s3 cp covid19_time_series.csv s3://$S3_BUCKET/covid19_time_series.csv
+```
+
+3. To push a `YAML` file to GitLab repository, follow these steps:
+- Check your **current remote repository**.
+```
+git remote -v
+```
+- To staged all the changes that you want to commit.
+```
+git add .
+```
+- To create a **commit and messages** to describe the changes you made in your project.
+```
+git commit -m <"Messages">
+```
+- To send `YAML` file from your **local repository to a remote repository**.
+```
+git push origin master
+```
+For more information about CI/CD YAML syntax.[Here](https://docs.gitlab.com/ee/ci/yaml/)
+
 ## Viewing a workflow result (Coming Soon)
+
+
+
+
+
+
+
