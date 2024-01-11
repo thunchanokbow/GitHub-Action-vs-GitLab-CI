@@ -36,15 +36,19 @@ git config --global user.email <"thunchanokbow@example.com">
 ```
 git remote add origin <HTTPS Links>
 ```
-4. To staged all the changes that you want to commit.
+4. Check your current remote repository.
+```
+git remote -v
+```
+5. To staged all the changes that you want to commit.
 ```
 git add .
 ```
-5. To create a **commit and messages** to describe the changes you made in your project.
+6. To create a **commit and messages** to describe the changes you made in your project.
 ```
 git commit -m <"Messages">
 ```
-6. To send changes from your **local repository to a remote repository**.  
+7. To send changes from your **local repository to a remote repository**, If this is your **first time** using Git with a GitLab repository, you'll be prompted to **enter your GitLab username and password**.  
 ```
 git push origin master
 ```
