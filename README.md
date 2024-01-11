@@ -24,4 +24,4 @@ Being a data engineer is creating different automations and in particular one ar
 - [Generate new access key And secret key](sections/02-gitlab-ci.md#Generate-new-access-key-And-secret-key).<br> 
 - [Store keys in CI/CD Varisbles](sections/02-gitlab-ci.md#Store-keys-in-CI/CD-Varisbles).<br> 
 - [Create a YAML file](sections/02-gitlab-ci.md#Create-a-YAML-file).<br> 
-- [Viewing a workflow result](sections/02-gitlab-ci.md#Viewing-a-workflow-result).<br> 
+- [Viewing a workflow result](sections/02-gitlab-ci.md#Viewing-a-job-result).<br> 
