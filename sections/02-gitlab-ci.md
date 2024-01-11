@@ -2,7 +2,7 @@
 - [Upload files to the GitLab Repository](sections/02-gitlab-ci.md#).<br>
 - [Create Buckget on AWS S3](sections/02-gitlab-ci.md#).<br>
 - [Generate new access key And secret key](sections/02-gitlab-ci.md#).<br>
-- [Store keys in Varisbles](sections/02-gitlab-ci.md#).<br>
+- [Store keys in CI/CD Varisbles](sections/02-gitlab-ci.md#).<br>
 - [Create a YAML file](sections/02-gitlab-ci.md#).<br>
 - [Viewing a workflow result](sections/02-gitlab-ci.md#).<br>
 
@@ -61,6 +61,7 @@ git push origin master
 
 ![0](/images/14.png)
 
+To create a bucket, follow these steps:
 1. Open the Amazon S3 console [Here](https://console.aws.amazon.com/s3/).
 2. In the left sidebar, choose **Buckets**.
 3. Click **Create bucket**.
@@ -80,6 +81,7 @@ For more information about create S3 buckets.[Here](https://docs.aws.amazon.com/
 
 ![0](/images/17.png)
 
+To generate new access key and secret key, follow these steps:
 1. On the **Console Home** page, scroll down and select the **IAM** service.
 2. In the left sidebar, select **Users** and then select **Add users**.
 
@@ -100,6 +102,50 @@ For more information about access key.[Here](https://docs.aws.amazon.com/IAM/lat
 
 ![0](/images/20.png)
 
-## Store keys in Varisbles (Coming Soon)
+## Store keys in CI/CD Varisbles 
+These variables **contain information** about the job, pipeline, **access key** and other values you might need when the pipeline is triggered or running.<br>
+
+![0](/images/21.png)
+
+To define a CI/CD varisble in the UI, follow these steps:
+1. Go to your project’s **Settings > CI/CD** and expand the **Variables** section.
+2. Select **Add variable** and fill in the details:
+
+![0](/images/22.png)
+
+- Access Key <br>
+
+copy this variable to fill in `Key`
+```
+AWS_ACCESS_KEY_ID
+```
+copy access key from Amazon page to fill in `Value`<br>
+```
+<Enter your value> 
+```
+- Secret Key <br>
+
+copy this variable to fill in `Key`
+```
+AWS_SECRET_ACCESS_KEY
+```
+copy secret key from Amazon page to fill in `Value`<br>
+```
+<Enter your value> 
+```
+- Buckget Name <br>
+
+copy this variable to fill in `Key`
+```
+S3_BUCKET
+```
+copy bucket name from S3 to fill in `Value`<br>
+```
+<Enter your value> 
+```
+
+After you create a variable, you can use it in the pipeline configuration or in job scripts.<br>
+For more information about define a CI/CD varisble.[Here](https://docs.gitlab.com/ee/ci/variables/)
+
 ## Create a YAML file (Coming Soon)
 ## Viewing a workflow result (Coming Soon)
