@@ -1,10 +1,10 @@
 # GitLab CI
-- [Upload files to the GitLab Repository](sections/02-gitlab-ci.md#).<br>
-- [Create Buckget on AWS S3](sections/02-gitlab-ci.md#Create-Buckget-on-AWS-S3).<br> 
-- [Generate new access key And secret key](sections/02-gitlab-ci.md#Generate-new-access-key-And-secret-key).<br> 
-- [Store keys in CI/CD Varisbles](sections/02-gitlab-ci.md#Store-keys-in-CI/CD-Varisbles).<br> 
-- [Create a YAML file](sections/02-gitlab-ci.md#Create-a-YAML-file).<br> 
-- [Viewing a workflow result](sections/02-gitlab-ci.md#Viewing-a-workflow-result).<br>
+- [Upload files to the GitLab Repository](02-gitlab-ci.md#).<br>
+- [Create Buckget on AWS S3](02-gitlab-ci.md#Create-Buckget-on-AWS-S3).<br> 
+- [Generate new access key And secret key](02-gitlab-ci.md#Generate-new-access-key-And-secret-key).<br> 
+- [Store keys in CI/CD Varisbles](02-gitlab-ci.md#Store-keys-in-CI/CD-Varisbles).<br> 
+- [Create a YAML file](02-gitlab-ci.md#Create-a-YAML-file).<br> 
+- [Viewing a workflow result](02-gitlab-ci.md#Viewing-a-workflow-result).<br>
 
 Using GitLab CI to upload files from GitLab repository to the storage on Amazon S3 (AWS S3)
 
