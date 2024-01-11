@@ -20,8 +20,8 @@ Being a data engineer is creating different automations and in particular one ar
 
 [GitLab CI](sections/02-gitlab-ci.md#).<br>
 - [Upload files to the GitLab Repository](sections/02-gitlab-ci.md#).<br>
-- [Create Buckget on AWS S3](sections/02-gitlab-ci.md#Viewing-a-workflow-result-(Coming-Soon)).<br> 
-- [Generate new access key And secret key](sections/02-gitlab-ci.md#Viewing-a-workflow-result-(Coming-Soon)).<br>
-- [Store keys in Varisbles](sections/02-gitlab-ci.md#Viewing-a-workflow-result-(Coming-Soon)).<br>
-- [Create a YAML file](sections/02-gitlab-ci.md#Viewing-a-workflow-result-(Coming-Soon)).<br>
-- [Viewing a workflow result](sections/02-gitlab-ci.md#Viewing-a-workflow-result-(Coming-Soon)).<br> 
+- [Create Buckget on AWS S3](sections/02-gitlab-ci.md#Create-Buckget-on-AWS-S3).<br> 
+- [Generate new access key And secret key](sections/02-gitlab-ci.md#Generate-new-access-key-And-secret-key).<br> 
+- [Store keys in CI/CD Varisbles](sections/02-gitlab-ci.md#Store-keys-in-CI/CD-Varisbles).<br> 
+- [Create a YAML file](sections/02-gitlab-ci.md#Create-a-YAML-file).<br> 
+- [Viewing a workflow result](sections/02-gitlab-ci.md#Viewing-a-workflow-result).<br> 
