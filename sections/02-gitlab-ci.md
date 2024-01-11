@@ -4,7 +4,7 @@
 - [Generate new access key And secret key](02-gitlab-ci.md#Generate-new-access-key-And-secret-key).<br> 
 - [Store keys in CI/CD Varisbles](02-gitlab-ci.md#Store-keys-in-CI/CD-Varisbles).<br> 
 - [Create a YAML file](02-gitlab-ci.md#Create-a-YAML-file).<br> 
-- [Viewing a workflow result](02-gitlab-ci.md#Viewing-a-workflow-result).<br>
+- [Viewing a job result](02-gitlab-ci.md#Viewing-a-workflow-result).<br>
 
 Using GitLab CI to upload files from GitLab repository to the storage on Amazon S3 (AWS S3)
 
@@ -186,11 +186,17 @@ git push origin master
 ```
 For more information about CI/CD YAML syntax.[Here](https://docs.gitlab.com/ee/ci/yaml/)
 
-## Viewing a workflow result (Coming Soon)
+![0](/images/25.png)
 
+## Viewing a job result 
 
+![0](/images/26.png)
 
+To view of jobs that ran in a project:
+1. On the left sidebar, select **Search or go to** and find your project.
+2. Select **Build > Jobs**.
 
+![0](/images/27.png)
 
-
+For more information about View jobs in a project.[Here](https://docs.gitlab.com/ee/ci/jobs/)
 
