@@ -5,15 +5,7 @@ Being a data engineer is creating different automations and in particular one ar
 ## Project Overview
 ![0](/images/09.png)
 
-Extract data and transform data using **Python**, define a **GitHub Actions** workflow that automates tasks, and deploy to an **AWS S3** bucket using **GitLab CI**. This project enabled the generation of comparative data, which can be used to consider which country has the highest vaccination rate or which country has the fastest economic recovery.
-
-![0](/images/01.png)
-
-**GitHub Actions** is a tool that helps us automate tasks on GitHub. These tasks are called **workflows**. We can specify when to run a workflow, such as when someone **pushes new code or opens a pull request**.<br>
-
-![0](/images/02.png)
-
-**GitLab CI** comes with built-in GitLab CI/CD. This makes it easy to create build pipelines and release pipelines. **GitLab runners can be installed in a variety of ways, including on Windows, Docker, and Kubernetes.**<br>
+Extract data and transform data using **Python**, define a **GitHub Actions** workflow that automates tasks, and deploy to an **AWS S3** bucket using **GitLab CI**. This project enabled the generation of comparative data, which can be used to consider which country has the highest vaccination rate or which country has the fastest economic recovery.<br><br>
 
 ## Contents
 [GitHub Actions](sections/01-github-actions.md).<br>
