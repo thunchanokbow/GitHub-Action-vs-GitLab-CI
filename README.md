@@ -1,9 +1,11 @@
-# GitHub Action vs GitLab CI
+# Global Data Deployment with CI/CD pipeline
 
 Being a data engineer is creating different automations and in particular one area that’s really important is CICD which stands for continuous integration and continuous deployment and this is area where you can automate your testing your release strategy through tools like **Github Actions or GitLab CI** and I also understand that this concept can be a little unclear if you haven’t seen it in action so **this simple project will help you use CI/CD tools to automate some basic tasks**.
 
 ## Project Overview
 ![0](/images/09.png)
+
+Extract data and transform data using **Python**, define a **GitHub Actions** workflow that automates tasks, and deploy to an **AWS S3** bucket using **GitLab CI**. This project enabled the generation of comparative data, which can be used to consider which country has the highest vaccination rate or which country has the fastest economic recovery.
 
 ![0](/images/01.png)
 
