@@ -7,7 +7,7 @@ You only need a GitHub repository to create and run a GitHub Actions workflow. T
 
 ![0](/images/03.png)  
 
-### Check that this step has been completed before STAR
+### Check that this step has been completed before START
 - Create a repository on GitHub.
 - Upload python script.
 
