@@ -10,7 +10,7 @@ Using GitLab CI to upload files from GitLab repository to the storage on Amazon 
 
 ![0](/images/12.png)
 
-### Check that this step has been completed before STAR
+### Check that this step has been completed before START
 - Create a repository on GitLab.
 - Prepare Files to uplaod.
 - Amazon account (AWS).
